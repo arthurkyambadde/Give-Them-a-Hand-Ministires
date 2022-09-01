@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A website for the Give Thanks Ministries (GTM) Charity Organisation"
+    />
+    <meta
+      name="keywords"
+      content="charity, GTM, Give Thanks Ministries, Uganda, East Africa, Africa, Disease, Hunger, Poverty, Christian, Moslem, Faith, Giving, Hope, Donnate, Donnation"
+    />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Dennis Ssembatya" />
+    <link rel="icon" type="image/svg" href="/assets/images/favicon.svg" />
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Give Them a Hand Ministries - smile with the rest of the world</title>
+  </head>
+  <body>
+    <header class="section__header">
+      <nav class="header__nav">
+        <div class="header__logo-box">
+          <p class="logo-text">GTHM</p>
+        </div>
+        <ul class="header__navigation">
+          <li class="navigation-list">
+            <a href="#" class="navigation-link">Home</a>
+          </li>
+          <li class="navigation-list">
+            <a href="#section_about" class="navigation-link">About</a>
+          </li>
+          <li class="navigation-list">
+            <a href="#section_services" class="navigation-link">Services</a>
+          </li>
+          <li class="navigation-list">
+            <a href="#section_fundraising" class="navigation-link">Fundraise</a>
+          </li>
+          <li class="navigation-list">
+            <a href="#section_causes" class="navigation-link">Contact Us</a>
+          </li>
+          <li class="navigation-list">
+            <a href="#section_causes" class="navigation-link">Causes</a>
+          </li>
+        </ul>
+        <a href="#popup" class="btn btn-typo btn-desktop"> Donate Now</a>
+        <div class="mobile__navigation">
+          <input
+            type="checkbox"
+            name="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+
+          <div class="navigation__background">&nbsp;</div>
+
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>01</span>Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#section_about" class="navigation__link"
+                  ><span>02</span>About</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#section_services" class="navigation__link"
+                  ><span>03</span>Services</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>04</span>Causes</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link"><span>05</span>Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+       <!-- Creating the form element box -->
+       <div id="login-form" class="login-page">
+        <!-- creating the form-box -->
+        <div class="form-box">
+          <a href="#section_about" class="popup__close" onclick="document.getElementById('login-form').style.display='none' ">&times;</a>
+          <div class="button-box">
+            <div id="btn">
+            <button type="button" id="logIn-btn" onclick="login()" class="toggle-btn">Log In</button>
+            <button type="button" id="register-btn" onclick="register()" class="toggle-btn">Register</button>
+          </div>
+          </div>
+          <!-- creating login form -->
+          <form action="#" id="login" class="input-group-login">
+            <input type="text" class="input-field" placeholder="Email Id" required>  
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="check-box"><span class="span-login">Remeber Password<span>
+            <button type="submit" class="submit-btn">Log in</button>
+          </form>
+          <!-- Creating the registration form -->
+          <form action="#" id="register" class="input-group-register">
+            <input type="text" class="input-field" placeholder="First Name" required>
+            <input type="text" class="input-field" placeholder="Last Name">
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="password" class="input-field" placeholder="Enter Password" required>
+            <input type="password" class="input-field " placeholder="Confirm Password" required>
+            <!-- <input type="checkbox" class="checkbox"><span class="span-register">I agree to the terms and conditions</span></> -->
+            <button type="submit" class="submit-btn">Log In</button>
+          </form>
+        </div>
+      </div>
+      <div class="header__hero-wrapper">
+        <div class="header__text-box header__text-box--desktop">
+          <h1 class="heading-primary">
+            Small effort make big <span class="header__span-text">change.</span>
+          </h1>
+          <div class="header__para-box">
+            <a href="#" class="btn btn-typo btn-tablet"> Donate Now</a>
+            <p class="header__paragraph">
+              We seek out world-changers and difference-makers around the globe,
+              and their unique purpose.
+            </p>
+          </div>
+        </div>
+        <div class="header__hero-image-wrapper">
+          <div class="header__text-box header__text-box--mobile">
+            <h1 class="heading-primary">
+              Small effort make big
+              <span class="header__span-text">change.</span>
+            </h1>
+            <div class="header__para-box">
+              <a href="#popup" class="btn btn-typo button-primary--mobile">
+                Donate Now</a
+              >
+              <p class="header__paragraph">
+                We seek out world-changers and difference-makers around the
+                globe, and their unique purpose.
+              </p>
+            </div>
+          </div>
+          <article class="header__rating-wrapper header__rating-wrapper-mobile">
+            <div class="header__ratings">
+              <p class="rate rate-1">
+                <span class="rate-num">12</span>
+                <span class="rate-text">Years of experience</span>
+              </p>
+              <div class="rate-line">&nbsp;</div>
+              <p class="rate rate-2">
+                <span class="rate-num rate-num--2">14</span>
+                <span class="rate-text">Thousands Volunteers</span>
+              </p>
+              <div class="rate-line">&nbsp;</div>
+              <p class="rate rate-3">
+                <span class="rate-num">23</span>
+                <span class="rate-text">Worldwide offices</span>
+              </p>
+            </div>
+          </article>
+          <div class="hero_img-cards hero_volunteer">
+            <img
+              src="assets/images/fund-img.png"
+              alt="fundraise image"
+              class="hero_img"
+            />
+            <div class="tick-box tick-box--red">
+              <img
+                src="assets/images/tick-vector.svg"
+                alt="tick vector"
+                class="tick-img"
+              />
+            </div>
+            <p class="card_title">Quick fundraise</p>
+            <div class="header__dotted-deco">
+              <img
+                src="assets/images/dotted-chat.png"
+                alt="dotted deco img"
+                class="dotted-deco"
+              />
+            </div>
+          </div>
+          <div class="hero_img-cards hero_funds">
+            <img
+              src="assets/images/volunteer-img.png"
+              alt="fundraise image"
+              class="hero_img"
+            />
+            <div class="tick-box tick-box--green">
+              <img
+                src="assets/images/tick-vector.svg"
+                alt="tick vector"
+                class="tick-img"
+              />
+            </div>
+            <p class="card_title">Become volunteer</p>
+          </div>
+          <div class="header__strip-arrow">
+            <img
+              src="assets/images/arrow-vector.png"
+              alt="strip arrow"
+              class="strip-arrow"
+            />
+          </div>
+        </div>
+      </div>
+      <article class="header__rating-wrapper header__rating-wrapper-desk">
+        <div class="header__ratings">
+          <p class="rate rate-1">
+            <span class="rate-num">12</span>
+            <span class="rate-text">Years of experience</span>
+          </p>
+          <div class="rate-line">&nbsp;</div>
+          <p class="rate rate-2">
+            <span class="rate-num rate-num--2">14</span>
+            <span class="rate-text">Thousands Volunteers</span>
+          </p>
+          <div class="rate-line">&nbsp;</div>
+          <p class="rate rate-3">
+            <span class="rate-num">23</span>
+            <span class="rate-text">Worldwide offices</span>
+          </p>
+        </div>
+      </article>
+    </header>
+    <main>
+      <section class="section__about" id="section_about">
+        <div class="about__container">
+          <div class="about__details-wrapper">
+            <div class="about__text-container">
+            
+              <h3 class="heading-about">
+                Feed a hungry child
+            </h3>
+            <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa eaque dolore adipisci sint. Et incidunt ad minus perspiciatis, accusamus inventore fugiat, quidem totam adipisci perferendis sed in dignissimos repellat.
+            </p>
+
+            <h3 class="heading-about">
+                Educate a poor child
+            </h3>
+            <p class="paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam esse quasi facere distinctio alias labore voluptate nulla.
+            </p>
+              <button
+              class="loginbtn btn"
+              onclick="document.getElementById('login-form').style.display='block' "
+            >
+              Join Us
+            </button>
+            </div>
+          </div>
+          <div class="about__img-wrapper">
+            <div class="about__image-card image_card">
+              <div class="composition">
+                <img src="assets/images/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
+                <img src="assets/images/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
+                <img src="assets/images/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__services" id="section_services">
+        <div class="services__container">
+          <div class="services__text-container">
+            <h2 class="heading-secondary">
+              <span class="heading_span heading_span--main">Our Services</span>
+              <span class="heading_span heading_span--sub"> We do it for all people humanist project others.</span>
+            </h2>
+          </div>
+          <div class="services__card-wrapper">
+            <div class="services__card services__card--1">
+              <div class="services__card-content">
+                <div class="services__icon-box services__icon-box--1">
+                  <img
+                    src="assets/images/charity-icon-1.svg"
+                    alt="service icon"
+                    class="services__card-img"
+                  />
+                </div>
+                <h3 class="heading-tertiary">Pure Water</h3>
+                <p class="services__card-paragraph">
+                  This is just a simple text made to replace with any text.
+                  since caecal cupidatate non-proident.
+                </p>
+                <a href="#" class="btn-text">Read more &rarr;</a>
+              </div>
+            </div>
+
+            <div class="services__card services__card--2">
+              <div class="services__card-content">
+                <div class="services__icon-box services__icon-box--2">
+                  <img
+                    src="assets/images/charity-icon-2.svg"
+                    alt="service icon"
+                    class="services__card-img"
+                  />
+                </div>
+                <h3 class="heading-tertiary">Medical Facilities</h3>
+                <p class="services__card-paragraph">
+                  This is just a simple text made to replace with any text.
+                  since caecal cupidatate non-proident.
+                </p>
+                <a href="#" class="btn-text">Read more &rarr;</a>
+              </div>
+            </div>
+
+            <div class="services__card services__card--3">
+              <div class="services__card-content">
+                <div class="services__icon-box services__icon-box--3">
+                  <img
+                    src="assets/images/charity-icon-3.svg"
+                    alt="service icon"
+                    class="services__card-img"
+                  />
+                </div>
+                <h3 class="heading-tertiary">Education</h3>
+                <p class="services__card-paragraph">
+                  This is just a simple text made to replace with any text.
+                  since caecal cupidatate non-proident.
+                </p>
+                <a href="#" class="btn-text">Read more &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__fundraising" id="section_fundraising">
+        <div class="fundraising__container">
+          <div class="fundraising__img-wrapper">
+            <div class="fundraising__image-card image_card">
+              <div class="fundraising__img-content img-content">
+                <img
+                  src="assets/images/fundraising_charity.png"
+                  alt="about image"
+                  class="fundraising__img card_img"
+                />
+              </div>
+              <div class="fundraising__img_box-wrapper img_content-wrapper">
+                &nbsp;
+              </div>
+            </div>
+          </div>
+          <div class="fundraising__details-wrapper">
+            <div class="fundraising__text-container">
+              <h2 class="heading-secondary">
+                <span class="heading_span heading_span--main">About us</span>
+                <span class="heading_span heading_span--sub">Your Support is Really Powerful.​</span>
+              </h2>
+              <p class="fundraising__paragraph">
+                Automotive’s four Frederick locations continue its 20 plus years
+                tradition of quality auto repair services. vehicle owners in the
+                nearest gym enter and take a look?
+              </p>
+              <a href="#" class="btn-text">Learn more &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section__causes" id="section_causes">
+        <div class="causes__container">
+          <div class="causes__text-container">
+            <h2 class="heading-secondary">
+              <span class="heading_span heading_span--main">Our Causes</span>
+              <span class="heading_span heading_span--sub">Donate To People In Need Our Causes.​</span>
+            </h2>
+          </div>
+        </div>
+        <div class="causes__card-wrapper">
+          <div class="causes__card causes__card--1">
+            <div class="causes__card-content">
+              <div class="causes__image-box">
+                <img
+                  src="assets/images/causes_img-1.png"
+                  alt="service icon"
+                  class="causes__card-img"
+                />
+              </div>
+              <h4 class="heading-tertiary--sub">Sports</h4>
+              <p class="causes__card-paragraph">
+                Donate for nutrition less poor children
+              </p>
+              <div class="causes__target-value-box">
+                <p class="causes__target-value">
+                  <span class="causes__target-value-span">Goal - $1,000</span>
+                  <span class="causes__target-value-span">Rise - $1,000</span>
+                </p>
+              </div>
+              <a href="#popup" class="btn btn-typo"> Donate Now</a>
+            </div>
+          </div>
+
+          <div class="causes__card causes__card--2">
+            <div class="causes__card-content">
+              <div class="causes__image-box">
+                <img
+                  src="assets/images/causes_img-2.png"
+                  alt="service icon"
+                  class="causes__card-img"
+                />
+              </div>
+              <h4 class="heading-tertiary--sub">Education</h4>
+              <p class="causes__card-paragraph">
+                Donate for nutrition less poor children
+              </p>
+              <div class="causes__target-value-box">
+                <p class="causes__target-value">
+                  <span class="causes__target-value-span">Goal - $1,000</span>
+                  <span class="causes__target-value-span">Rise - $1,000</span>
+                </p>
+              </div>
+              <a href="#popup" class="btn btn-typo"> Donate Now</a>
+            </div>
+          </div>
+
+          <div class="causes__card causes__card--3">
+            <div class="causes__card-content">
+              <div class="causes__image-box">
+                <img
+                  src="assets/images/causes_img-3.png"
+                  alt="service icon"
+                  class="causes__card-img"
+                />
+              </div>
+              <h4 class="heading-tertiary--sub">Health</h4>
+              <p class="causes__card-paragraph">
+                Donate for nutrition less poor children
+              </p>
+              <div class="causes__target-value-box">
+                <p class="causes__target-value">
+                  <span class="causes__target-value-span">Goal - $1,000</span>
+                  <span class="causes__target-value-span">Rise - $1,000</span>
+                </p>
+              </div>
+              <a href="#popup" class="btn btn-typo"> Donate Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="section_contact">
+          <div class="contact__container">
+            <div class="bg-video" id="video-container">
+              <video class="bg-video__content" id="video">
+                <source src="assets/images/video.mp4" type="video/mp4">
+                <source src="assets/images/video.webm" type="video/webm">
+                Your browser needs to be updated
+              </video>
+            </div>
+            <div class="contact__text-box">
+              <h2 class="contact__heading">How Can We Help You?</h2>
+              <p class="contact__paragraph">
+                Your donation will help us save and improve lives with research,
+                education three and emergency care.
+              </p>
+              <div class="contact__btn-box">
+                <button class="play-btn" id="play-btn" title="play">
+                  <img
+                    src="assets/images/foot__btn.svg"
+                    alt="contact us btn"
+                    class="contact_btn"
+                  />
+                </button>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      
+        <div class="footer__content-wrapper">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">About us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Tours & news</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer__text-box">
+            <p class="footer__copyright">
+              Built by <a href="#" class="footer__link"> &copy; by Kyambadde Arthur 2022.</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <a href="#section__header" class="popup__close">&times;</a>
+        <div class="popup__form">
+          <form action="#" class="form">
+            <h2 class="heading-secondary popup__heading">
+              Start Donating Now​
+            </h2>
+            <div class="form__group">
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Full Name"
+                id="name"
+                required
+              />
+              <label for="name" class="form__label">Full Name</label>
+            </div>
+
+            <div class="form__group">
+              <input
+                type="email"
+                class="form__input"
+                placeholder="Email"
+                id="email"
+                required
+              />
+              <label for="email" class="form__label">Email</label>
+            </div>
+
+            <div class="form__group">
+              <div class="form__radio-group">
+                <input
+                  type="radio"
+                  id="special"
+                  class="form__radio-input"
+                  name="package"
+                />
+                <label for="special" class="form__radio-label">
+                  <span class="form__radio-button"></span> Special
+                </label>
+              </div>
+
+              <div class="form__radio-group">
+                <input
+                  type="radio"
+                  id="regular"
+                  class="form__radio-input"
+                  name="package"
+                />
+                <label for="regular" class="form__radio-label">
+                  <span class="form__radio-button"></span> Regular</label
+                >
+              </div>
+            </div>
+            <div class="form__group">
+              <button class="btn btn--brown">Next step &rarr;</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+   
+  </body>
+</html>
