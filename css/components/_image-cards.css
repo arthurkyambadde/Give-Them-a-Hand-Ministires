@@ -1,0 +1,110 @@
+/*The image card component with an image wrapped inside a container*/
+
+.image_card {
+  height: 54rem;
+  width: 63rem;
+}
+
+.img-content {
+  width: 89%;
+  height: 56rem;
+  position: relative;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.card_img {
+  height: 90%;
+}
+
+.img_content-wrapper {
+  width: 90%;
+  min-height: 25rem;
+  background-color: var(--color-grey-light-3);
+  position: relative;
+  top: -52%;
+  z-index: 2;
+}
+
+/*  //media query manager  */
+
+/*  //@if $breakpoint == tab-land  */
+@media only screen and (max-width: 75em) {
+  .image_card {
+    height: 44rem;
+    width: 44rem;
+  }
+  .card_img {
+    height: 73%;
+    transform: translateX(34px);
+  }
+  .img-content {
+    height: 52rem;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .img_content-wrapper {
+    width: 100%;
+    min-height: 20rem;
+    background-color: var(--color-grey-light-1);
+    top: -69%;
+    z-index: 2;
+  }
+}
+
+/*  //@if $breakpoint == tab-port  */
+@media only screen and (max-width: 56.25em) {
+  .image_card {
+    height: 55rem;
+    width: 55rem;
+  }
+  .card_img {
+    height: 93%;
+    transform: translateX(34px);
+  }
+  .img-content {
+    height: 52rem;
+  }
+  .img_content-wrapper {
+    min-height: 26rem;
+    top: -44%;
+  }
+}
+
+/*    //@if $breakpoint == phone */
+@media only screen and (max-width: 37.5em) {
+  .image_card {
+    height: 42rem;
+    width: 37rem;
+  }
+  .card_img {
+    height: 60%;
+    transform: translateX(34px);
+  }
+  .img-content {
+    height: 52rem;
+  }
+  .img_content-wrapper {
+    min-height: 20rem;
+    top: -90%;
+  }
+}
+/*  // @ if $ breakpoint == small phone */
+@media only screen and (max-width: 20em) {
+  .image_card {
+    height: 32rem;
+    width: 30rem;
+  }
+  .card_img {
+    height: 48%;
+    transform: translateX(26px);
+  }
+  .img-content {
+    height: 52rem;
+  }
+  .img_content-wrapper {
+    min-height: 13rem;
+    top: -112%;
+  }
+}

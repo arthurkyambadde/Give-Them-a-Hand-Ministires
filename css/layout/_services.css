@@ -1,0 +1,107 @@
+.section__services {
+  width: 100%;
+  height: 100%;
+  background: var(--color-white);
+  padding: 5rem 10rem;
+}
+
+.services__card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 6.1rem;
+  align-items: center;
+}
+
+.services__card {
+  padding: 5.1rem 4.1rem;
+  width: 36.9rem;
+  height: 40.5rem;
+  background: var(--color-white);
+  box-shadow: 0 1.5rem 4rem rgba(165, 165, 165, 0.2);
+  border-radius: 2rem;
+  perspective: 150rem;
+}
+
+.services__text-container {
+  text-align: center;
+  margin: 0 auto 7.4rem auto;
+}
+
+.services__icon-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 8.4rem;
+  height: 8.4rem;
+  border-radius: 2rem;
+}
+
+.services__icon-box--1 {
+  background: #f4643f;
+}
+
+.services__icon-box--2 {
+  background: #f0c24a;
+}
+
+.services__icon-box--3 {
+  background: #56b9b4;
+}
+
+/*  //media query manager  */
+
+/*  //@if $breakpoint == tab-land  */
+@media only screen and (max-width: 75em) {
+  .services__card-wrapper {
+    gap: 3.1rem;
+  }
+  .services__card {
+    width: 24.9rem;
+    height: 38.5rem;
+  }
+  .services__text-container {
+    width: 60%;
+  }
+}
+
+/*  //@if $breakpoint == tab-port  */
+@media only screen and (max-width: 56.25em) {
+  .services__card-wrapper {
+    flex-direction: column;
+    gap: 6.1rem;
+    align-items: center;
+  }
+  .services__card {
+    width: 36.9rem;
+    height: 40.5rem;
+  }
+  .services__text-container {
+    width: 80%;
+    margin: 0 auto 3.4rem auto;
+    text-align: center;
+  }
+  /*    //@if $breakpoint == phone */
+  @media only screen and (max-width: 37.5em) {
+    .section__services {
+      padding: 2rem 4rem;
+    }
+    .services__card-wrapper {
+      align-items: center;
+    }
+    .services__text-container {
+      width: 100%;
+    }
+    .services__card {
+      width: 28.9rem;
+      height: 37.5rem;
+    }
+  }
+  /*  // @ if $ breakpoint == small phone */
+  @media only screen and (max-width: 20em) {
+    .services__card {
+      padding: 1rem 4.1rem;
+      width: 23.9rem;
+      height: 33.5rem;
+    }
+  }
+}

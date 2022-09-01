@@ -1,0 +1,133 @@
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.7rem 3rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 16rem;
+  height: 5rem;
+  border-radius: 10rem;
+  background: var(--color-primary);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-text,
+.btn-text:link,
+.btn-text:visited {
+  font-size: var(--default-font-size);
+  color: #686868;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.3rem;
+  width: 50%;
+  transition: all 0.2s;
+}
+
+.btn-text:hover {
+  color: #292424;
+}
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
+}
+
+.btn-desktop {
+  display: inline-block;
+}
+
+.btn-tablet {
+  display: none;
+}
+
+.btn--brown {
+  margin-top: 4rem;
+  background-color: var(--color-primary-light);
+}
+
+.btn-secondary {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 14.9rem;
+  height: 4.8rem;
+  background: var(--color-primary-dark-2);
+  color: var(--color-white);
+}
+
+.btn-tertiary {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 11.8rem;
+  height: 3.9rem;
+  background: var(--color-grey-light-4);
+  color: var(--color-primary);
+}
+
+.btn-services {
+  margin-bottom: 4rem;
+}
+.btn-causes {
+  margin-bottom: 4rem;
+}
+.services__btn-text {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  width: 11rem;
+  height: 2rem;
+}
+
+.play-btn {
+  border: none;
+  background: transparent;
+}
+
+/*  //@if $breakpoint == tab-port  */
+@media only screen and (max-width: 56.25em) {
+  .btn-desktop {
+    display: none;
+  }
+  .btn-tablet {
+    display: inline-block;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.4rem;
+    width: 16rem;
+    height: 5rem;
+  }
+
+  .btn--brown {
+    margin-top: -1rem;
+  }
+}
+
+/*  // @ if $ breakpoint == small phone */
+@media only screen and (max-width: 20em) {
+  .btn-text,
+  .btn-text:link,
+  .btn-text:visited {
+    width: 65%;
+  }
+}
