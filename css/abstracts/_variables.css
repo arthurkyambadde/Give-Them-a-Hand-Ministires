@@ -1,0 +1,24 @@
+html {
+  /*COLORS*/
+  --color-text-light: #303030;
+  --color-text-dark: #252525;
+
+  --color-primary: #660066;
+  --color-primary-dark-2: #800080;
+  --color-primary-light: #ffb900;
+
+  --color-grey-light-1: #f7f7f7;
+  --color-grey-light-2: #eee;
+  --color-grey-light-3: #e5e5e5;
+  --color-grey-light-4: #efefef;
+
+  --color-grey-dark: #777;
+  --color-grey-dark-2: #999;
+  --color-grey-dark-3: #333;
+
+  --color-white: #ffffff;
+  --color-black: #000;
+
+  /*FONT SIZE*/
+  --default-font-size: 1.6rem;
+}
